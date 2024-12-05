@@ -1,35 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet"
-    href="css/style/MainStyle.css"/>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="css/style/MainStyle.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Interview</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="topnav">
-        <img class="logo" src="https://www.instruct.nl/wp-content/uploads/2022/03/Techniek-College-Rotterdam-Logo.png">
-        <a class="active" href="index.html">Home Pagina</a>
-        <a href="contact.html">Contact</a>
-        <a href="extra_info.html">Extra Info</a>
-        <a href="formulier.html">Formulier</a>
-        <a href="info_over_mij.html">Info Over Mij</a>
-        <a href="interview.html">Interview</a>
-        <a href="mijn_projecten.html">Projecten</a>
+      <img
+        class="logo"
+        src="https://www.instruct.nl/wp-content/uploads/2022/03/Techniek-College-Rotterdam-Logo.png"
+      />
+      <a class="active" href="index.html">Home Pagina</a>
+      <a href="contact.html">Contact</a>
+      <a href="extra_info.html">Extra Info</a>
+      <a href="formulier.html">Formulier</a>
+      <a href="info_over_mij.html">Info Over Mij</a>
+      <a href="interview.html">Interview</a>
+      <a href="mijn_projecten.html">Projecten</a>
     </div>
 
     <div class="square3"></div>
 
-    <h1 class="titel1">INTERVIEW</H1>
+    <h1 class="titel1">INTERVIEW</h1>
 
     <div class="square1"></div>
 
-    <p class="text_interview">Q:<br>Wie ben je?<br>A:<br>Chris<br>|<br>Q:<br>Hoe oud ben je?<br>A:<br>15 jaar oud.<br>|<br>Q:<br>Wat deed je voor deze opleiding?<br>A:<br>Vwo<br>|<br>Q:<br>Waarom heb je gekozen voor deze opleiding?<br>A:<br>Omdat ik meer van programeren wil leren.<br>|<br>Q:<br>Wat vind je tot nu toe van de opleiding?<br>A:<br>Heel erg leuk!</p>
-    
+    <p class="text_interview">
+      Q:<br />Wie ben je?<br />A:<br />Chris<br />|<br />Q:<br />Hoe oud ben
+      je?<br />A:<br />15 jaar oud.<br />|<br />Q:<br />Wat deed je voor deze
+      opleiding?<br />A:<br />Vwo<br />|<br />Q:<br />Waarom heb je gekozen voor
+      deze opleiding?<br />A:<br />Omdat ik meer van programeren wil leren.<br />|<br />Q:<br />Wat
+      vind je tot nu toe van de opleiding?<br />A:<br />Heel erg leuk!
+    </p>
 
+    <img
+      class="DarkModeKnop"
+      src="simple-moon-icon-png.webp"
+      onclick="ToggleDarkMode()"
+    />
 
-
-
-</body>
+    <script>
+      function ToggleDarkMode() {
+        var element = document.body;
+        element.classList.toggle("darkmode");
+        var square3 = document.querySelector(".square3");
+        var square1 = document.querySelector(".square1");
+        var topnav = document.querySelector(".topnav");
+        if (square3) {
+          square3.classList.toggle("darkmode-square");
+        }
+        if (square1) {
+          square1.classList.toggle("darkmode-square");
+        }
+        if (topnav) {
+          topnav.classList.toggle("darkmode-topnav");
+        }
+        console.log("dark mode toggled");
+      }
+    </script>
+  </body>
 </html>

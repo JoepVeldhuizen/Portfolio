@@ -35,5 +35,28 @@
 
     <img class="socials" src="https://i.imgur.com/3ukFUyJ.png">
 
+
+    <img class="DarkModeKnop" src="simple-moon-icon-png.webp" onclick="ToggleDarkMode()">
+
+    <script>
+        function ToggleDarkMode() {
+        var element = document.body;
+        element.classList.toggle("darkmode");
+        var square3 = document.querySelector('.square3');
+        var square8 = document.querySelector('.square8');
+        var topnav = document.querySelector('.topnav');
+        if (square3) {
+            square3.classList.toggle("darkmode-square");
+        }
+        if (square8) {
+            square8.classList.toggle("darkmode-square");
+        }
+        if (topnav) {
+            topnav.classList.toggle("darkmode-topnav")
+        }
+        console.log("dark mode toggled");
+    }
+    </script>
+
 </body>
 </html>

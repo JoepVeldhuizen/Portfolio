@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet"
-    href="css/style/MainStyle.css"/>
+    <link rel="stylesheet" href="css/style/MainStyle.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulier</title>
 </head>
+
 <body>
     <div class="topnav">
         <img class="logo" src="https://www.instruct.nl/wp-content/uploads/2022/03/Techniek-College-Rotterdam-Logo.png">
@@ -18,7 +19,7 @@
         <a href="interview.html">Interview</a>
         <a href="mijn_projecten.html">Projecten</a>
     </div>
-    
+
     <div class="square3"></div>
 
     <div class="square5"></div>
@@ -41,8 +42,31 @@
         <p></p>
         <br>
         <input type="submit" name="submit">
-      </form>
+    </form>
     </div>
 
+    <img class="DarkModeKnop" src="simple-moon-icon-png.webp" onclick="ToggleDarkMode()">
+
+    <script>
+        function ToggleDarkMode() {
+            var element = document.body;
+            element.classList.toggle("darkmode");
+            var square3 = document.querySelector('.square3');
+            var square5 = document.querySelector('.square5');
+            var topnav = document.querySelector('.topnav');
+            if (square3) {
+                square3.classList.toggle("darkmode-square");
+            }
+            if (square5) {
+                square5.classList.toggle("darkmode-square");
+            }
+            if (topnav) {
+                topnav.classList.toggle("darkmode-topnav")
+            }
+            console.log("dark mode toggled");
+        }
+    </script>
+
 </body>
+
 </html>

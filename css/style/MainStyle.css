@@ -66,6 +66,11 @@ table, th, td {
     transition: width 2s;
 }
 
+.topnav button {
+    height: 50px;
+    width: 100px;
+}
+
 .topnav a:hover {
     text-decoration: underline;
     color: black;

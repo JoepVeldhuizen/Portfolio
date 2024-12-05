@@ -26,6 +26,8 @@
     <p class="text_square4">Hallo! Mijn naaam is Joep van Veldhuizen en ik ben 16 jaar oud.<br>
     Ik kom uit Krimpen a/d IJssel en ik zit op de opleiding Software Developer op het Techniek College Rotterdam.</p>
 
+    <img class="DarkModeKnop" src="simple-moon-icon-png.webp" onclick="ToggleDarkMode()">
+
     <table>
         <tr>
             <th>Taal</th>
@@ -48,6 +50,26 @@
             <td>Nee</td>
           </tr>
     </table>
+
+    <script>
+      function ToggleDarkMode() {
+      var element = document.body;
+      element.classList.toggle("darkmode");
+      var square3 = document.querySelector('.square3');
+      var square9 = document.querySelector('.square9');
+      var topnav = document.querySelector('.topnav');
+      if (square3) {
+          square3.classList.toggle("darkmode-square");
+      }
+      if (square9) {
+          square9.classList.toggle("darkmode-square");
+      }
+      if (topnav) {
+          topnav.classList.toggle("darkmode-topnav")
+      }
+      console.log("dark mode toggled");
+  }
+  </script>
 
 </body>
 </html>
