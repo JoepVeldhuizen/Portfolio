@@ -7,9 +7,8 @@
 body {
     background-position-y: 25vh;
     background-attachment: fixed;
-    background-image: url(https://parametric-architecture.com/wp-content/uploads/2022/12/PA_Background-website-01.jpg);
     background-size: cover;
-    background-color: rgb(245, 242, 238);
+    background-color: rgb(255, 255, 255);
 }
 table {
     position: absolute;
@@ -414,4 +413,26 @@ textarea {
     top: 46.5vh;
     left: 50vw;
     transform: translate(-50%, -50%);
+}
+
+.DarkModeKnop {
+    height: 75px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 96vw;
+    top: 2.5vw;
+}
+
+.darkmode {
+    color: white;
+    background-color: #000000;
+}
+
+.darkmode-square {
+    background-color:rgb(25, 25, 25);
+}
+
+.darkmode-topnav {
+    background-color: #141414;
+    color:#3e3e3e
 }
