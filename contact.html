@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet"
-    href="css/style/MainStyle.css"/>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="css/style/MainStyle.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="topnav">
-        <img class="logo" src="https://www.instruct.nl/wp-content/uploads/2022/03/Techniek-College-Rotterdam-Logo.png">
+      <button onclick="MenuToggle()">Menu</button>
+      <img
+        class="logo"
+        src="https://www.instruct.nl/wp-content/uploads/2022/03/Techniek-College-Rotterdam-Logo.png"
+      />
+      <div id="topnav">
         <a class="active" href="index.html">Home Pagina</a>
         <a href="contact.html">Contact</a>
         <a href="extra_info.html">Extra Info</a>
@@ -17,6 +21,7 @@
         <a href="info_over_mij.html">Info Over Mij</a>
         <a href="interview.html">Interview</a>
         <a href="mijn_projecten.html">Projecten</a>
+      </div>
     </div>
 
     <div class="square3"></div>
@@ -26,37 +31,53 @@
     <h1 class="titel1">CONTACT</h1>
 
     <div class="contact_link1">
-        <a href="https://github.com/JoepVeldhuizen" target="_blank">Github</a>
+      <a href="https://github.com/JoepVeldhuizen" target="_blank">Github</a>
     </div>
 
     <div class="contact_link2">
-        <a href="https://www.linkedin.com/in/joep-veldhuizen-a615a5334/" target="_blank">LinkedIn</a>
+      <a
+        href="https://www.linkedin.com/in/joep-veldhuizen-a615a5334/"
+        target="_blank"
+        >LinkedIn</a
+      >
     </div>
 
-    <img class="socials" src="https://i.imgur.com/3ukFUyJ.png">
+    <img class="socials" src="https://i.imgur.com/3ukFUyJ.png" />
 
-
-    <img class="DarkModeKnop" src="simple-moon-icon-png.webp" onclick="ToggleDarkMode()">
+    <img
+      class="DarkModeKnop"
+      src="simple-moon-icon-png.webp"
+      onclick="ToggleDarkMode()"
+    />
 
     <script>
-        function ToggleDarkMode() {
+      function ToggleDarkMode() {
         var element = document.body;
         element.classList.toggle("darkmode");
-        var square3 = document.querySelector('.square3');
-        var square8 = document.querySelector('.square8');
-        var topnav = document.querySelector('.topnav');
+        var square3 = document.querySelector(".square3");
+        var square8 = document.querySelector(".square8");
+        var topnav = document.querySelector(".topnav");
         if (square3) {
-            square3.classList.toggle("darkmode-square");
+          square3.classList.toggle("darkmode-square");
         }
         if (square8) {
-            square8.classList.toggle("darkmode-square");
+          square8.classList.toggle("darkmode-square");
         }
         if (topnav) {
-            topnav.classList.toggle("darkmode-topnav")
+          topnav.classList.toggle("darkmode-topnav");
         }
         console.log("dark mode toggled");
-    }
+      }
     </script>
-
-</body>
+    <script>
+      function MenuToggle() {
+        var x = document.getElementById("topnav");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>
+  </body>
 </html>

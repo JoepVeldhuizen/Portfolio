@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet"
-    href="css/style/MainStyle.css"/>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="css/style/MainStyle.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ExtraInfo</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="topnav">
-        <img class="logo" src="https://www.instruct.nl/wp-content/uploads/2022/03/Techniek-College-Rotterdam-Logo.png">
+      <button onclick="MenuToggle()">Menu</button>
+      <img
+        class="logo"
+        src="https://www.instruct.nl/wp-content/uploads/2022/03/Techniek-College-Rotterdam-Logo.png"
+      />
+      <div id="topnav">
         <a class="active" href="index.html">Home Pagina</a>
         <a href="contact.html">Contact</a>
         <a href="extra_info.html">Extra Info</a>
@@ -17,6 +21,7 @@
         <a href="info_over_mij.html">Info Over Mij</a>
         <a href="interview.html">Interview</a>
         <a href="mijn_projecten.html">Projecten</a>
+      </div>
     </div>
 
     <div class="square3"></div>
@@ -25,52 +30,76 @@
 
     <h1 class="titel5">INFO OVER PROJECT</h1>
 
-    <p class="text_square4">De website bevat in elk geval een home- pagina, en een pagina wie je bent. De overige pagina's zijn naar eigen idee verder in te vullen.<br>
-        De website maakt gebruik van de juiste HTML elementen, het div element wordt alleen gebruikt waar het niet anders kan<br>
-        Elke webpagina heeft precies één keer de elementen DOCTYPE, html, head en body<br>
-        De website is opgebouwd met HTML en CSS<br>
-        De opmaak van de website zit  in een CSS bestand. Er wordt geen gebruik gemaakt van het style-attribuut<br>
-        Elke student plaatst minimaal één afbeelding op zijn/haar eigen pagina<br>
-        Elke student plaatst minimaal één video op zijn/haar eigen pagina<br>
-        Elke student plaatst minimaal één formulier (Met minimaal 3 verschillende inputs) op zijn/haar eigen pagina<br>
-        Elke student plaatst minimaal één tabel (Met minimaal 3 rijen aan data).,<br>
-        Op de website zijn de volgende onderwerpen terug te vinden:<br>
-        <br>
-        Home pagina<br>
-        Een interview met een mede student: Waarom heeft je groepsgenoot van deze opleiding gekozen. Bedenk minimaal 5 vragen over dit onderwerp<br>
-        Achtergrond-informatie over jezelf. Je werkervaring, welke opleidingen je hebt gedaan<br>
-        Een pagina om je latere projecten in te plaatsen, gebruik placeholder plaatjes als inhoud<br>
-        En wat je zelf verder kwijt wilt wat relevant is over jou als student/softwaredeveloper<br>
-        Links naar eventuele "social-media" zoals github/linkedin<br>
-        Overige eisen:<br>
-        <br>
-        WireFrame<br>
-        Sitemap<br>
-        Planning<br>
-        Functionaliteiten conform MoSCoW<br>
-        Je code is gevalideerd</p>
+    <p class="text_square4">
+      De website bevat in elk geval een home- pagina, en een pagina wie je bent.
+      De overige pagina's zijn naar eigen idee verder in te vullen.<br />
+      De website maakt gebruik van de juiste HTML elementen, het div element
+      wordt alleen gebruikt waar het niet anders kan<br />
+      Elke webpagina heeft precies één keer de elementen DOCTYPE, html, head en
+      body<br />
+      De website is opgebouwd met HTML en CSS<br />
+      De opmaak van de website zit in een CSS bestand. Er wordt geen gebruik
+      gemaakt van het style-attribuut<br />
+      Elke student plaatst minimaal één afbeelding op zijn/haar eigen pagina<br />
+      Elke student plaatst minimaal één video op zijn/haar eigen pagina<br />
+      Elke student plaatst minimaal één formulier (Met minimaal 3 verschillende
+      inputs) op zijn/haar eigen pagina<br />
+      Elke student plaatst minimaal één tabel (Met minimaal 3 rijen aan
+      data).,<br />
+      Op de website zijn de volgende onderwerpen terug te vinden:<br />
+      <br />
+      Home pagina<br />
+      Een interview met een mede student: Waarom heeft je groepsgenoot van deze
+      opleiding gekozen. Bedenk minimaal 5 vragen over dit onderwerp<br />
+      Achtergrond-informatie over jezelf. Je werkervaring, welke opleidingen je
+      hebt gedaan<br />
+      Een pagina om je latere projecten in te plaatsen, gebruik placeholder
+      plaatjes als inhoud<br />
+      En wat je zelf verder kwijt wilt wat relevant is over jou als
+      student/softwaredeveloper<br />
+      Links naar eventuele "social-media" zoals github/linkedin<br />
+      Overige eisen:<br />
+      <br />
+      WireFrame<br />
+      Sitemap<br />
+      Planning<br />
+      Functionaliteiten conform MoSCoW<br />
+      Je code is gevalideerd
+    </p>
 
-
-        <img class="DarkModeKnop" src="simple-moon-icon-png.webp" onclick="ToggleDarkMode()">
-        <script>
-            function ToggleDarkMode() {
-            var element = document.body;
-            element.classList.toggle("darkmode");
-            var square3 = document.querySelector('.square3');
-            var square4 = document.querySelector('.square4');
-            var topnav = document.querySelector('.topnav');
-            if (square3) {
-                square3.classList.toggle("darkmode-square");
-            }
-            if (square4) {
-                square4.classList.toggle("darkmode-square");
-            }
-            if (topnav) {
-                topnav.classList.toggle("darkmode-topnav")
-            }
-            console.log("dark mode toggled");
+    <img
+      class="DarkModeKnop"
+      src="simple-moon-icon-png.webp"
+      onclick="ToggleDarkMode()"
+    />
+    <script>
+      function ToggleDarkMode() {
+        var element = document.body;
+        element.classList.toggle("darkmode");
+        var square3 = document.querySelector(".square3");
+        var square4 = document.querySelector(".square4");
+        var topnav = document.querySelector(".topnav");
+        if (square3) {
+          square3.classList.toggle("darkmode-square");
         }
-        </script>
-
-</body>
+        if (square4) {
+          square4.classList.toggle("darkmode-square");
+        }
+        if (topnav) {
+          topnav.classList.toggle("darkmode-topnav");
+        }
+        console.log("dark mode toggled");
+      }
+    </script>
+    <script>
+      function MenuToggle() {
+        var x = document.getElementById("topnav");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>
+  </body>
 </html>

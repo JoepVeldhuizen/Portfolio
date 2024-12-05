@@ -6,18 +6,20 @@
   </head>
   <body>
     <div class="topnav">
-      <button>Menu</button>
+      <button onclick="MenuToggle()">Menu</button>
       <img
         class="logo"
         src="https://www.instruct.nl/wp-content/uploads/2022/03/Techniek-College-Rotterdam-Logo.png"
       />
-      <a class="active" href="index.html">Home Pagina</a>
-      <a href="contact.html">Contact</a>
-      <a href="extra_info.html">Extra Info</a>
-      <a href="formulier.html">Formulier</a>
-      <a href="info_over_mij.html">Info Over Mij</a>
-      <a href="interview.html">Interview</a>
-      <a href="mijn_projecten.html">Projecten</a>
+      <div id="topnav">
+        <a class="active" href="index.html">Home Pagina</a>
+        <a href="contact.html">Contact</a>
+        <a href="extra_info.html">Extra Info</a>
+        <a href="formulier.html">Formulier</a>
+        <a href="info_over_mij.html">Info Over Mij</a>
+        <a href="interview.html">Interview</a>
+        <a href="mijn_projecten.html">Projecten</a>
+      </div>
     </div>
 
     <div class="square2"></div>
@@ -97,6 +99,17 @@
       }
 
       document.getElementById("BegroetingTekst").innerHTML = begroeting;
+    </script>
+
+    <script>
+      function MenuToggle() {
+        var x = document.getElementById("topnav");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
     </script>
   </body>
 </html>
